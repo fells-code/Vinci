@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap");
+
+@import "./variables.css";
+@import "./base.css";
+@import "./utilities.css";
+@import "./components/button.css";
+@import "./components/card.css";
+@import "./components/input.css";
+@import "./components/heading.css";
+@import "./components/navbar.css";
+@import "./components/hero.css";
+@import "./components/features.css";
+@import "./components/code.css";
+@import "./components/section.css";

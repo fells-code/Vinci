@@ -1,0 +1,18 @@
+:root {
+  /* Fonts */
+  --ds-font-body: "Inter", sans-serif;
+  --ds-font-heading: "Playfair Display", serif;
+
+  /* Radii */
+  --ds-radius: 9999px;
+
+  /* Colors */
+  --ds-color-primary: #a4bea0;
+  --ds-color-primary-hover: #8bad9d;
+  --ds-color-surface: #dfd7bb;
+  --ds-color-accent: #d89065;
+  --ds-color-danger: #c36c5d;
+
+  /* Gradients */
+  --ds-gradient-soft: linear-gradient(135deg, #a4bea0 0%, #dfd7bb 100%);
+}

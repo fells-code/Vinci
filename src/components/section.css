@@ -1,0 +1,56 @@
+/* Basic Section Style */
+.ds-section {
+  padding: 4rem 2rem; /* Standard padding for sections */
+  margin: 2rem 0; /* Vertical margin to separate sections */
+  background-color: var(--ds-color-surface); /* Soft background for sections */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Light shadow for separation */
+  text-align: center; /* Center-align text */
+}
+
+.ds-section__title {
+  font-family: var(--ds-font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ds-color-primary);
+  margin-bottom: 1rem;
+}
+
+.ds-section__content {
+  font-family: var(--ds-font-body);
+  font-size: 1rem;
+  color: #444; /* Dark text for readability */
+  line-height: 1.5; /* Comfortable line spacing */
+}
+
+/* Responsive Design Enhancements */
+
+/* Tablet and smaller */
+@media (max-width: 1024px) {
+  .ds-section {
+    padding: 3rem 1.5rem; /* Reduced padding on tablets */
+  }
+
+  .ds-section__title {
+    font-size: 1.75rem; /* Slightly smaller title for tablets */
+  }
+
+  .ds-section__content {
+    font-size: 0.95rem; /* Smaller font size for content */
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .ds-section {
+    padding: 2rem 1rem; /* Even smaller padding on mobile */
+  }
+
+  .ds-section__title {
+    font-size: 1.5rem; /* Further reduced title size on mobile */
+  }
+
+  .ds-section__content {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+  }
+}

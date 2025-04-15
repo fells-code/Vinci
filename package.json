@@ -1,0 +1,19 @@
+{
+  "name": "vinci",
+  "version": "1.0.0",
+  "main": "dist/index.css",
+  "style": "dist/index.css",
+  "scripts": {
+    "build": "postcss src/index.css -o dist/index.css",
+    "prepare": "pnpm run build"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.0",
+    "postcss-cli": "^9.1.0",
+    "autoprefixer": "^10.4.0"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

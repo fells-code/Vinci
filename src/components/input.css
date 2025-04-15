@@ -1,0 +1,6 @@
+.ds-input {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--ds-radius);
+  font-size: 1rem;
+}

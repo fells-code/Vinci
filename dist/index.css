@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap");
+
+:root {
+  /* Fonts */
+  --ds-font-body: "Inter", sans-serif;
+  --ds-font-heading: "Playfair Display", serif;
+
+  /* Radii */
+  --ds-radius: 9999px;
+
+  /* Colors */
+  --ds-color-primary: #a4bea0;
+  --ds-color-primary-hover: #8bad9d;
+  --ds-color-surface: #dfd7bb;
+  --ds-color-accent: #d89065;
+  --ds-color-danger: #c36c5d;
+
+  /* Gradients */
+  --ds-gradient-soft: linear-gradient(135deg, #a4bea0 0%, #dfd7bb 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ds-font-body);
+  font-size: var(--ds-font-size-base);
+  color: var(--ds-color-text);
+  background-color: var(--ds-color-bg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--ds-font-heading);
+}
+
+.ds-flex {
+  display: flex;
+}
+
+.ds-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.ds-m-1 {
+  margin: 0.25rem;
+}
+
+.ds-p-1 {
+  padding: 0.25rem;
+}
+
+/* Base button */
+
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  font-family: var(--ds-font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 9999px; /* Updated here for pill shape */
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  background-color: var(--ds-color-primary);
+  color: #ffffff;
+}
+
+.ds-btn:hover {
+  background-color: var(--ds-color-primary-hover);
+}
+
+.ds-btn:focus {
+  outline: 2px solid var(--ds-color-primary);
+  outline-offset: 2px;
+}
+
+.ds-btn:disabled {
+  background-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Secondary Button */
+
+.ds-btn--secondary {
+  background-color: var(--ds-color-accent);
+  color: #ffffff;
+}
+
+.ds-btn--secondary:hover {
+  background-color: #c77b53;
+}
+
+/* Outline Button */
+
+.ds-btn--outline {
+  background-color: transparent;
+  border: 1px solid var(--ds-color-primary);
+  color: var(--ds-color-primary);
+}
+
+.ds-btn--outline:hover {
+  background-color: rgba(164, 190, 160, 0.1);
+}
+
+/* Ghost Button */
+
+.ds-btn--ghost {
+  background-color: transparent;
+  color: var(--ds-color-primary);
+}
+
+.ds-btn--ghost:hover {
+  background-color: rgba(164, 190, 160, 0.05);
+}
+
+/* Danger Button */
+
+.ds-btn--danger {
+  background-color: var(--ds-color-danger);
+  color: #ffffff;
+}
+
+.ds-btn--danger:hover {
+  background-color: #b85d4f;
+}
+
+.ds-card {
+  padding: 1rem;
+  border-radius: var(--ds-radius);
+  background-color: #f9fafb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ds-input {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: var(--ds-radius);
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.5em;
+  color: var(--ds-color-primary);
+  line-height: 1.2;
+}
+
+/* Headline styles */
+
+h1 {
+  font-family: var(--ds-font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: var(--ds-font-heading);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--ds-font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Subheading styles */
+
+h4 {
+  font-family: var(--ds-font-body);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-family: var(--ds-font-body);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+h6 {
+  font-family: var(--ds-font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.ds-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: beige;
+  font-family: var(--ds-font-body);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.ds-navbar__brand {
+  font-family: var(--ds-font-heading);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+
+.ds-navbar__menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.ds-navbar__menu a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  transition: color 0.2s ease;
+}
+
+.ds-navbar__menu a:hover {
+  color: var(--ds-color-accent);
+}
+
+.ds-navbar__actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ds-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: var(--ds-gradient-soft);
+  text-align: center;
+  min-height: 80vh; /* Full viewport height for hero */
+}
+
+.ds-hero__content {
+  max-width: 640px;
+  width: 100%;
+}
+
+.ds-hero__title {
+  font-family: var(--ds-font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: black;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.ds-hero__subtitle {
+  font-family: var(--ds-font-body);
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); /* subtle shadow */
+}
+
+.ds-hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .ds-hero__title {
+    font-size: 2.25rem; /* Slightly smaller title */
+  }
+
+  .ds-hero__subtitle {
+    font-size: 1.125rem; /* Slightly smaller subtitle */
+  }
+
+  .ds-hero__actions {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ds-btn {
+    width: 100%; /* Full width buttons on mobile */
+  }
+}
+
+.ds-feature {
+  padding: 4rem 2rem;
+  background-color: var(--ds-color-surface);
+  text-align: center;
+}
+
+.ds-feature__title {
+  font-family: var(--ds-font-heading);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+.ds-feature__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.ds-feature__card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: var(--ds-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ds-feature__card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ds-feature__card-title {
+  font-family: var(--ds-font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--ds-color-primary);
+  margin-bottom: 1rem;
+}
+
+.ds-feature__card-description {
+  font-family: var(--ds-font-body);
+  font-size: 1rem;
+  color: #444;
+}
+
+/* Responsive Design Enhancements */
+
+/* Tablet and smaller */
+
+@media (max-width: 1024px) {
+  .ds-feature__title {
+    font-size: 2rem; /* Smaller title for tablets */
+  }
+
+  .ds-feature__card {
+    padding: 1.5rem; /* Less padding on cards */
+  }
+
+  .ds-feature__card-title {
+    font-size: 1.125rem; /* Smaller title on cards */
+  }
+
+  .ds-feature__card-description {
+    font-size: 0.95rem; /* Smaller description text */
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .ds-feature__title {
+    font-size: 1.75rem; /* Further reduced title size for mobile */
+  }
+
+  .ds-feature__grid {
+    gap: 1rem; /* Smaller gap between cards */
+  }
+
+  .ds-feature__card {
+    padding: 1rem; /* Smaller padding on cards */
+  }
+
+  .ds-feature__card-title {
+    font-size: 1rem; /* Even smaller card titles */
+  }
+
+  .ds-feature__card-description {
+    font-size: 0.875rem; /* Smaller card description */
+  }
+
+  .ds-feature__card {
+    width: 100%; /* Full-width cards on mobile */
+  }
+}
+
+/* Inline Code */
+
+.ds-inline-code {
+  background-color: var(--ds-color-light-gray); /* Light background */
+  font-family: "Inter", sans-serif;
+  font-size: 1rem; /* Slightly smaller than body text */
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  color: var(--ds-color-primary);
+}
+
+/* Block Code */
+
+.ds-code-block {
+  background-color: var(--ds-color-light-gray); /* Soft background */
+  color: var(--ds-color-dark); /* Dark text for better readability */
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto; /* Horizontal scrolling for long lines */
+  margin: 2rem 0;
+  white-space: pre-wrap; /* Ensures long code lines wrap */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ds-code-block pre {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.ds-code-block code {
+  background: none; /* Removes additional background */
+  color: inherit; /* Inherit color from parent */
+}
+
+/* Responsive for mobile */
+
+@media (max-width: 768px) {
+  .ds-code-block {
+    padding: 0.75rem; /* Smaller padding for mobile */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}
+
+/* Basic Section Style */
+
+.ds-section {
+  padding: 4rem 2rem; /* Standard padding for sections */
+  margin: 2rem 0; /* Vertical margin to separate sections */
+  background-color: var(--ds-color-surface); /* Soft background for sections */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Light shadow for separation */
+  text-align: center; /* Center-align text */
+}
+
+.ds-section__title {
+  font-family: var(--ds-font-heading);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ds-color-primary);
+  margin-bottom: 1rem;
+}
+
+.ds-section__content {
+  font-family: var(--ds-font-body);
+  font-size: 1rem;
+  color: #444; /* Dark text for readability */
+  line-height: 1.5; /* Comfortable line spacing */
+}
+
+/* Responsive Design Enhancements */
+
+/* Tablet and smaller */
+
+@media (max-width: 1024px) {
+  .ds-section {
+    padding: 3rem 1.5rem; /* Reduced padding on tablets */
+  }
+
+  .ds-section__title {
+    font-size: 1.75rem; /* Slightly smaller title for tablets */
+  }
+
+  .ds-section__content {
+    font-size: 0.95rem; /* Smaller font size for content */
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .ds-section {
+    padding: 2rem 1rem; /* Even smaller padding on mobile */
+  }
+
+  .ds-section__title {
+    font-size: 1.5rem; /* Further reduced title size on mobile */
+  }
+
+  .ds-section__content {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+  }
+}

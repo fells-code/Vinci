@@ -1,0 +1,72 @@
+/* Base button */
+.ds-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.25rem;
+  font-family: var(--ds-font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 9999px; /* Updated here for pill shape */
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  border: none;
+  background-color: var(--ds-color-primary);
+  color: #ffffff;
+}
+
+.ds-btn:hover {
+  background-color: var(--ds-color-primary-hover);
+}
+
+.ds-btn:focus {
+  outline: 2px solid var(--ds-color-primary);
+  outline-offset: 2px;
+}
+
+.ds-btn:disabled {
+  background-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Secondary Button */
+.ds-btn--secondary {
+  background-color: var(--ds-color-accent);
+  color: #ffffff;
+}
+
+.ds-btn--secondary:hover {
+  background-color: #c77b53;
+}
+
+/* Outline Button */
+.ds-btn--outline {
+  background-color: transparent;
+  border: 1px solid var(--ds-color-primary);
+  color: var(--ds-color-primary);
+}
+
+.ds-btn--outline:hover {
+  background-color: rgba(164, 190, 160, 0.1);
+}
+
+/* Ghost Button */
+.ds-btn--ghost {
+  background-color: transparent;
+  color: var(--ds-color-primary);
+}
+
+.ds-btn--ghost:hover {
+  background-color: rgba(164, 190, 160, 0.05);
+}
+
+/* Danger Button */
+.ds-btn--danger {
+  background-color: var(--ds-color-danger);
+  color: #ffffff;
+}
+
+.ds-btn--danger:hover {
+  background-color: #b85d4f;
+}

@@ -1,0 +1,58 @@
+.ds-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  background: var(--ds-gradient-soft);
+  text-align: center;
+  min-height: 80vh; /* Full viewport height for hero */
+}
+
+.ds-hero__content {
+  max-width: 640px;
+  width: 100%;
+}
+
+.ds-hero__title {
+  font-family: var(--ds-font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: black;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.ds-hero__subtitle {
+  font-family: var(--ds-font-body);
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.05); /* subtle shadow */
+}
+
+.ds-hero__actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .ds-hero__title {
+    font-size: 2.25rem; /* Slightly smaller title */
+  }
+
+  .ds-hero__subtitle {
+    font-size: 1.125rem; /* Slightly smaller subtitle */
+  }
+
+  .ds-hero__actions {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .ds-btn {
+    width: 100%; /* Full width buttons on mobile */
+  }
+}
