@@ -1,6 +1,6 @@
-# My Design System
+# Vinci Design System
 
-Lightweight, reusable CSS style system for React apps.
+Lightweight, reusable CSS style system that are inspired by italian art and history
 
 ## Usage
 
