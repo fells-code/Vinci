@@ -44,7 +44,7 @@
 .ds-btn--outline {
   background-color: transparent;
   border: 1px solid var(--ds-color-primary);
-  color: var(--ds-color-primary);
+  color: black;
 }
 
 .ds-btn--outline:hover {

@@ -5,7 +5,7 @@
   --ds-font-body: "Inter", sans-serif;
   --ds-font-heading: "Playfair Display", serif;
 
-  /* Radii */
+  /* Radis */
   --ds-radius: 9999px;
 
   /* Colors */
@@ -107,7 +107,7 @@ h6 {
 .ds-btn--outline {
   background-color: transparent;
   border: 1px solid var(--ds-color-primary);
-  color: var(--ds-color-primary);
+  color: black;
 }
 
 .ds-btn--outline:hover {
@@ -138,7 +138,7 @@ h6 {
 
 .ds-card {
   padding: 1rem;
-  border-radius: var(--ds-radius);
+  border-radius: 3px;
   background-color: #f9fafb;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
@@ -324,7 +324,7 @@ h6 {
 .ds-feature__card {
   background-color: white;
   padding: 2rem;
-  border-radius: var(--ds-radius);
+  border-radius: 3px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
