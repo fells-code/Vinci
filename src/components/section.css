@@ -1,4 +1,9 @@
 /* Basic Section Style */
+section {
+  padding-top: var(--ds-space-2);
+  padding-bottom: var(--ds-space-2);
+}
+
 .ds-section {
   padding: 4rem 2rem; /* Standard padding for sections */
   margin: 2rem 0; /* Vertical margin to separate sections */

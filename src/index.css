@@ -2,7 +2,8 @@
 
 @import "./variables.css";
 @import "./base.css";
-@import "./utilities.css";
+
+/* Components imports */
 @import "./components/button.css";
 @import "./components/card.css";
 @import "./components/input.css";
@@ -12,3 +13,9 @@
 @import "./components/features.css";
 @import "./components/code.css";
 @import "./components/section.css";
+@import "./components/grid.css";
+@import "./components/list.css";
+@import "./components/footer.css";
+
+/* Utility imports */
+@import "./utilities/padding.css";

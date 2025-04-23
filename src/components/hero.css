@@ -3,7 +3,6 @@
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
-  background: var(--ds-gradient-soft);
   text-align: center;
   min-height: 80vh; /* Full viewport height for hero */
 }

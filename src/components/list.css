@@ -1,0 +1,122 @@
+/* Base styles for all lists */
+ul,
+ol {
+  font-family: var(--ds-font-body);
+  color: #333;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+  line-height: 1.6;
+}
+
+/* UL: Clean, no bullets */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* OL: Styled numbers */
+ol {
+  list-style-position: inside;
+  list-style-type: decimal;
+  padding-left: 0;
+  counter-reset: vinci-counter;
+}
+
+ol li {
+  counter-increment: vinci-counter;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+ol li::before {
+  content: counter(vinci-counter) ".";
+  position: absolute;
+  left: 0;
+  color: var(--ds-color-primary);
+  font-weight: bold;
+}
+
+/* List items (shared styles) */
+li {
+  margin-bottom: 0.15rem;
+}
+
+/* Nested Lists */
+ul ul,
+ol ol,
+ul ol,
+ol ul {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+}
+
+/* List Header */
+.ds-list-header {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #888;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* List Divider */
+.ds-list-divider {
+  border-bottom: 1px solid #ddd;
+  margin: 0.5rem 0;
+  height: 0;
+  list-style: none;
+  padding: 0;
+}
+
+/* Sidebar Navigation List */
+.ds-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ds-nav-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.ds-nav-item:hover {
+  background-color: rgba(152, 187, 148, 0.639); /* soft green background */
+  color: #000;
+}
+
+.ds-nav-item-active {
+  background-color: #a4bea0; /* active highlight */
+  color: #fff;
+}
+
+/* Scrollable vertical list */
+.ds-scroll-list {
+  max-height: 300px; /* Adjust based on layout */
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 0.5rem; /* Optional space for scrollbar */
+  scroll-behavior: smooth;
+}
+
+/* Optional: style scrollbars for Webkit browsers */
+.ds-scroll-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ds-scroll-list::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.ds-scroll-list::-webkit-scrollbar-track {
+  background-color: transparent;
+}

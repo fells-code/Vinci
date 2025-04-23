@@ -1,6 +1,6 @@
 {
   "name": "vinci",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "dist/index.css",
   "style": "dist/index.css",
   "scripts": {
@@ -8,9 +8,10 @@
     "prepare": "pnpm run build"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
     "postcss-cli": "^9.1.0",
-    "autoprefixer": "^10.4.0"
+    "postcss-import": "^16.1.0"
   },
   "files": [
     "dist",

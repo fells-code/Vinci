@@ -15,4 +15,11 @@
 
   /* Gradients */
   --ds-gradient-soft: linear-gradient(135deg, #a4bea0 0%, #dfd7bb 100%);
+
+  /* Breakpoints */
+  --ds-breakpoint-sm: 640px;
+  --ds-breakpoint-md: 768px;
+  --ds-breakpoint-lg: 1024px;
+  --ds-breakpoint-xl: 1280px;
+  --ds-breakpoint-2xl: 1536px;
 }

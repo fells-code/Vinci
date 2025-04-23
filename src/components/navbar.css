@@ -15,6 +15,15 @@
   color: black;
 }
 
+.ds-navbar__brand a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.ds-navbar__brand a:hover {
+  color: var(--ds-color-accent);
+}
+
 .ds-navbar__menu {
   display: flex;
   gap: 1.5rem;
